@@ -234,7 +234,7 @@ worksContainer.innerHTML = workContent
 
     // if private, show message instead of links
     const linkSection = isPrivate
-      ? `<p class="private-text">(Private project – not publicly launched)</p>`
+      ? `<p class="private-text">(Private project)</p>`
       : `
         <div class="work-link">
           <a href="${livelink}" target="_blank">
