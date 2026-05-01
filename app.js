@@ -90,10 +90,17 @@ profileImgContainer.addEventListener("mouseout", () => {
   protraitBorder.style.top = "1.2rem";
   protraitBorder.style.left = "1.2rem";
 });
-
 const workContent = [
   {
-    id: 21,
+    key: "campus-bridge",
+    title: "Campus Bridge",
+    desc: "Built a full-stack student accommodation and services platform with secure authentication, listing management, real-time chat, KYC verification, and payment workflows.",
+    github: "https://github.com/praise-idise/CampusBridge-BE",
+    livelink: "https://campusbridgeapp.netlify.app/",
+    tools: ["React", "TypeScript", "ASP.NET", "SQL Server", "SignalR"],
+  },
+  {
+    key: "qurexa",
     title: "Qurexa",
     desc: "Engineered the complete backend infrastructure for Qurexa, covering API design, authentication, data modeling, and production deployment.",
     github: "#",
@@ -101,15 +108,15 @@ const workContent = [
     tools: ["Node", "Express", "MongoDB", "AWS"],
   },
   {
-    id: 18,
+    key: "payinfra",
     title: "PayInfra",
-    desc: "Developed a payment infrastructure and loyalty system for a franchise",
+    desc: "Developed a payment infrastructure and loyalty system for a franchise.",
     github: "#",
     livelink: "#",
     tools: ["React", "ASP.NET", "SQL Server"],
   },
   {
-    id: 12,
+    key: "terminus",
     title: "Terminus",
     desc: "Built a fintech POS monitoring solution for tracking transactions and performance of POS terminals.",
     github: "https://github.com/praise-idise/PavilionPOSMerchantWebApp",
@@ -117,7 +124,7 @@ const workContent = [
     tools: ["React", "ASP.NET", "SQL Server"],
   },
   {
-    id: 20,
+    key: "504-driving-school",
     title: "504 Driving School",
     desc: "Developed a platform for managing student bookings, classes, and courses for 504 Driving School.",
     github: "#",
@@ -125,7 +132,7 @@ const workContent = [
     tools: ["React", "ASP.NET", "SQL Server"],
   },
   {
-    id: 13,
+    key: "legal-drop-crm",
     title: "CRM solution for Legal Drop",
     desc: "Built an admin platform for managing riders, users, and orders for Legal Drop.",
     github: "https://github.com/praise-idise/CRM-BootStrap",
@@ -133,7 +140,7 @@ const workContent = [
     tools: ["Node.js", "React", "Typescript", "Google Maps API"],
   },
   {
-    id: 19,
+    key: "delivery-ease-logistics",
     title: "The Delivery Ease Logistics",
     desc: "Rebuilt and optimized the backend for The Delivery Ease Logistics. Added real-time tracking with Google Maps API and refined the React frontend.",
     github: "#",
@@ -141,7 +148,7 @@ const workContent = [
     tools: ["React", "Laravel", "MySQL", "Google Maps API", "AWS"],
   },
   {
-    id: 9,
+    key: "coreinfra",
     title: "CoreInfra",
     desc: "Built the official website for CoreInfra Solutions Ltd.",
     github: "#",
@@ -149,32 +156,32 @@ const workContent = [
     tools: ["React", "TailwindCSS"],
   },
   {
-    id: 7,
+    key: "love-me",
     title: "Love-Me",
-    desc: "Web app for generating different kinds of love letters using GPT-3",
+    desc: "Web app for generating different kinds of love letters using GPT-3.",
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
     tools: ["React", "Node.js", "OpenAI API"],
   },
   {
-    id: 16,
+    key: "log-analyzer",
     title: "Log Analyzer",
-    desc: "C# Library API for analyzing and sorting log files ",
+    desc: "C# Library API for analyzing and sorting log files.",
     github: "https://github.com/praise-idise/LogAnalyzerLibrary",
     livelink:
       "https://documenter.getpostman.com/view/27915658/2sAYQXpDao#intro",
     tools: ["C#", "ASP.NET", "Postman"],
   },
   {
-    id: 17,
+    key: "kip-restaurant",
     title: "Kip Restaurant",
-    desc: "Developed a backend web app for managing restaurant orders, users, and menu items",
+    desc: "Developed a backend web app for managing restaurant orders, users, and menu items.",
     github: "https://github.com/praise-idise/KIP-Restaurant",
     livelink: "#",
     tools: ["ASP.NET", "SQL Server"],
   },
   {
-    id: 14,
+    key: "medical-advance-platform",
     title: "Medical Advance Platform",
     desc: "Developed a Quote Dashboard demonstrating the UX flow for quote responses.",
     github: "https://github.com/praise-idise/MAP-interview-project",
@@ -182,7 +189,7 @@ const workContent = [
     tools: ["React", "TailwindCSS"],
   },
   {
-    id: 0,
+    key: "kip-store",
     title: "KIP Store",
     desc: "Built an eCommerce website that displays products dynamically from the FakeStore API.",
     github: "https://github.com/praise-idise/KIP-Store",
@@ -190,7 +197,7 @@ const workContent = [
     tools: ["TailwindCSS", "FakestoreAPI", "JavaScript"],
   },
   {
-    id: 6,
+    key: "settlement-dashboard",
     title: "Settlement Dashboard",
     desc: "Developed a fintech settlement dashboard for monitoring transactions and settlements.",
     github: "https://github.com/praise-idise/dashboard",
@@ -198,15 +205,15 @@ const workContent = [
     tools: ["React", "TailwindCSS"],
   },
   {
-    id: 15,
+    key: "sureplug",
     title: "Sureplug",
-    desc: "Mobile chat application for connecting cryptocurrency buyers ",
+    desc: "Mobile chat application for connecting cryptocurrency buyers.",
     github: "https://github.com/praise-idise/sureplug-clone",
     livelink: "#",
     tools: ["React Native", "Expo", "Supabase"],
   },
   {
-    id: 8,
+    key: "creditry",
     title: "Creditry",
     desc: "Designed and built a landing page for Creditry, a financial B2B loan platform.",
     github: "https://github.com/creditry",
@@ -214,7 +221,7 @@ const workContent = [
     tools: ["React", "TailwindCSS"],
   },
   {
-    id: 11,
+    key: "fredacom",
     title: "Fredacom",
     desc: "Built a web app marketplace for buying and selling research data for Fredacom.",
     github: "https://github.com/TheFredacom",
@@ -222,46 +229,53 @@ const workContent = [
     tools: ["TailwindCSS", "React", "Node.js"],
   },
 ];
+
 const worksContainer = document.querySelector(".works-container");
-const privateProjectIds = [18, 12]; // your private IDs
-const githubHiddenIds = [21, 20, 19, 13, 9];
+
+const privateProjectKeys = new Set(["payinfra", "terminus"]);
+const githubHiddenKeys = new Set([
+  "qurexa",
+  "504-driving-school",
+  "delivery-ease-logistics",
+  "legal-drop-crm",
+  "coreinfra",
+]);
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const { id, title, desc, github, livelink, tools } = item;
-    const isPrivate = privateProjectIds.includes(id);
-    const hideGithub = githubHiddenIds.includes(id);
+    const { key, title, desc, github, livelink, tools } = item;
+    const isPrivate = privateProjectKeys.has(key);
+    const hideGithub = githubHiddenKeys.has(key);
 
-    // if private, show message instead of links
     const linkSection = isPrivate
-      ? `<p class="private-text">(Private project)</p>`
+      ? '<p class="private-text">(Private project)</p>'
       : `
-        <div class="work-link">
-          <a href="${livelink}" target="_blank">
-            <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
-          </a>
-          ${
-            hideGithub
-              ? ""
-              : `<a href="${github}" class="github" target="_blank">
-            <img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link">
-          </a>`
-          }
-        </div>
-      `;
+            <div class="work-link">
+              <a href="${livelink}" target="_blank">
+                <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
+              </a>
+              ${
+                hideGithub
+                  ? ""
+                  : `<a href="${github}" class="github" target="_blank">
+                      <img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link">
+                    </a>`
+              }
+            </div>
+          `;
 
     return `
-      <div class="work-container">
-        <div class="work-content-container">
-          <h3 class="work-title">${title}</h3>
-          <p class="desc">${desc}</p>
-          ${linkSection}
-          <div class="work-tools">
-            ${tools?.map((tool) => `<span>${tool}</span>`).join("") || ""}
+          <div class="work-container" data-key="${key}">
+            <div class="work-content-container">
+              <h3 class="work-title">${title}</h3>
+              <p class="desc">${desc}</p>
+              ${linkSection}
+              <div class="work-tools">
+                ${tools?.map((tool) => `<span>${tool}</span>`).join("") || ""}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    `;
+        `;
   })
   .join("");
 
