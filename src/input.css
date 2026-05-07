@@ -53,17 +53,17 @@ ul a {
 }
 
 .work-link {
-  @apply flex gap-x-8 mb-auto
+  @apply flex gap-x-8 mb-auto;
 }
 
 .work-link a {
   @apply hover:shadow-sm hover:shadow-lime-400 rounded-full p-1;
 }
 
-.work-tools{
-  @apply flex gap-2 text-xs flex-wrap mt-auto
+.work-tools {
+  @apply flex gap-2 text-xs flex-wrap mt-auto;
 }
 
 .work-tools span {
-  @apply bg-gray-600 rounded-full p-1 px-2
+  @apply bg-lime-400 bg-opacity-10 text-lime-400 rounded-full p-1 px-2;
 }
